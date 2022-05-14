@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-.grid__body{
+.grid {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
     "header header header"
     "titulo titulo titulo"
@@ -17,11 +17,11 @@ header {
     grid-area: header;
     display: flex;
     flex-direction: row;
-    background-color: rgb(127, 221, 221);
-    justify-content: end;
+    background: linear-gradient(90deg, rgb(108, 195, 241), rgb(237, 235, 235));
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 50px;   
+    height: 3.125rem;   
 }
 
 .header__navegacion ul {
@@ -29,7 +29,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: ;
-    background-color: rgb(127, 221, 221);
     margin-right: 20px;
 }
 
@@ -43,18 +42,29 @@ li {
     margin: 0 20px;
 }
 
+li:hover{
+    transform: scale(1.3);
+}
 
 a {
     text-decoration: none;
 }
 main {
     grid-area: main;
-    padding: 30px;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    justify-content: center;
 }
 
+.section__foto__main__asegurados{
+    max-width: fit-content;
+    align-self: center;
+}
+.section__foto{
+    max-width: 100%;
+}
 section {
-    background-color: #959494;
-    
+    background: linear-gradient(90deg, rgb(70, 80, 168), #ccc)
 }
 
 .section__titulo {
@@ -64,117 +74,262 @@ section {
     color: rgb(127, 221, 221);
     font-weight: bold;
     padding-top: 10px;
-    text-align: center;
+    text-align:left;
+    background: linear-gradient(90deg, rgb(70, 80, 168), #ccc);
+    padding-left: 20px;
     
 }
 
-.section__foto {
-    margin: 10px;
-    position: relative;
-    bottom: 50%;
-    left: 30%;
-    }
+.cobertura__automotor{
+    max-width: 100%;
+}
 
-    form {
+.texto__cobertura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
-        margin-left: 10px;
-        padding: 10px;
-        color: #e1e1e1;
-        width: 35%;
-        border-style:groove;
-        border-color: white;
-    }
-    
-    .form__botones {
-        display: inline;
-    } 
-    
-    .boton__enviar {
-        margin: 10px;
-        font-weight: 700;
-        outline: none;
-        font-size: 22px;
-        color: rgb(14, 14, 14);
-    }
-    
-    .boton__borrar {
-        color:rgb(9, 9, 9);
-        margin-left: 0px;
-        font-weight: 700;
-        outline: none;
-        font-size: 22px
-    }
+}
 
-    footer {
-        grid-area: footer;
-        background-color: rgb(127, 221, 221);
-        color: #2e2e2e;
-        font-size: 12px;
-        margin-left: 30px;
-        margin-right: 30px;
+.main__asegurados{
+    align-self: center;
+}
+
+.section__asegurados{
+    display: flex;
+    flex-direction: column;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-left: 10px;
+    padding: 10px;
+    color: #e1e1e1;
+    
+    border-style:groove;
+    border-color: white;
     }
     
-    
-    .disclaimer {
-        font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
-        font-size: 15px;
-        line-height: 1.4;
-        color: #222;
-        text-align: left;
-    }
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(108, 195, 241), rgb(237, 235, 235));
+    color: #2e2e2e;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 50px;
+}
+
+.mail_footer{
+    padding: 10px;
+}
+
+.disclaimer {
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #222;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
 
 .section__coberturas {
-
-    padding: 30px;
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     }
 
+.log{
+    padding: 10px;
+}
 
 .texto__cobertura {
     background-color: white;
 }
 
-
-.contacto__imagen {
-    position:relative;
-    left: 40%;
-    bottom: 50%;
-    margin: 20px;
+.section__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.contacto__imagen{
+    max-width: fit-content;
+    align-self: center;
+}
 .contacto__texto {
-    text-align: center   ;
+    text-align: center;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .formulario__contacto {
-    position: relative;
-    left:30%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
     padding-bottom: 20px;
+}
+
+.boton__contacto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgb(70, 80, 168), #ccc);
+}
+.section__quienes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 541px) and (max-width: 720px){
+    
+.grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header "
+    "titulo titulo "
+    "main main "
+    "footer footer ";       
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, rgb(108, 195, 241), rgb(237, 235, 235));
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    }
+
+.header__navegacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, rgb(108, 195, 241), rgb(237, 235, 235));
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section__coberturas {
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cobertura__automotor{
+    object-fit: contain;
+}
+    
+.portada{
+    object-fit: contain;
+}
+
+.section__foto__main__asegurados{
+    max-width: 75%;
+    align-self: center;
+}
+
+.section__quienes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
 
 }
 
-.quienes__somos{ 
-    padding-left: 20px;
+@media (min-width: 320px) and (max-width: 540px){
+.grid{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header "
+    "titulo "
+    "main "
+    "footer ";       
+}
+    
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(108, 195, 241), rgb(237, 235, 235));
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+    
+.header__navegacion ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, rgb(108, 195, 241), rgb(237, 235, 235));
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    font-size:8px;
+}
+    
+.section__coberturas {
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cobertura__automotor{
+    object-fit: contain;
+}
+
+.section__foto__main__asegurados{
+    max-width: 75%;
+    align-self: center;
+
+}
+.formulario__contacto {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     padding-bottom: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-
 }
 
-
-.quienes__somos__foto {
-    padding-left: 20px;
-    padding-top: 20px;
-    float: left;
-    padding-right: 20px;
-
+.section__quienes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+}
 
-
-
-
-
-
-
+.disclaimer {
+    font-size: 8px;
+}
+}
