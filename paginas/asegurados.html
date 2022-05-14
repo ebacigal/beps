@@ -21,26 +21,30 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1 class="section__titulo">ASEGURADOS</h1>
-            <img class="section__foto" src="../recursos/foto_index 2.jpg"alt="tu seguridad es nuestra tranqui"/>
-            <form method="POST">
+        <h1 class="section__titulo">ASEGURADOS</h1>
+        <section class="section__asegurados">
+            <img class="section__foto__main__asegurados" src="../recursos/foto_index 2.jpg"alt="tu seguridad es nuestra tranqui"/>
+            <form class="formulario__contacto" method="POST">
                 <label for="nombre">Usuario</label>
                 <input placeholder="escribe tu usuario aqui"/>
                 <label for="contraseña">Contraseña</label>
                 <input  placeholder="escribe tu contraseña aqui"/> 
-                <div class="form__botones">
-                    <input class="boton__enviar" type="button" value="Enviar"/>
-                </div>
-            <input class="boton__borrar" type="reset" value="Borrar"/>
         </form>
         </section>
-    </main>
-    <footer>
-        <p><img  src="../recursos/favicon-16x16.png"/></p>
-        <div class="disclaimer">Todos los derechos reservados
+        <div class="boton__contacto">
+            <input type="button" value="Enviar"/>
+            <input type="reset" value="Borrar"/>
         </div>
         
+    </main>
+    <footer>
+        <div class="disclaimer">Todos los derechos reservados
+        </div>
+        <div class="logo_footer"><img src="../recursos/logo_footer.png"/>
+        </div>  
+        <div class="log"><img src="../recursos/whatsapp_footer.png">
+                        <img src="../recursos/mail_footer.png">
+        </div>
     </footer>
 </body>
 </html>

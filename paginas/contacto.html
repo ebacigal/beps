@@ -21,26 +21,31 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1 class="section__titulo">CONTACTO</h1>
+        <h1 class="section__titulo">CONTACTO</h1>
+        <section class="section__contacto">
             <img class="contacto__imagen" src="../recursos/contacto.jpg" alt="dejanos un mensaje"/>
-            <div class="contacto__texto">Dejanos tus datos para poder contactarte</div>
+            <p class="contacto__texto">Dejanos tus datos para poder contactarte</p>
             <form class="formulario__contacto" method="POST">
                     <label for="nombre">Nombre</label>
                     <input placeholder="escribe tu nombre aqui"/>
                     <label for="mail">Mail</label>
                     <input placeholder="escribe tu mail aqui"/> 
-                    <div>
-                        <input type="button" value="Enviar"/>
-                    </div>
-                <input type="reset" value="Borrar"/>
+                    
             </form>
         </section>
+        <div class="boton__contacto">
+            <input type="button" value="Enviar"/>
+            <input type="reset" value="Borrar"/>
+        </div>
     </main>
     <footer>
-        <p><img src="../recursos/favicon-16x16.png"/>
-        </p>
-        <div class="disclaimer">Todos los derechos reservados</div>
+        <div class="disclaimer">Todos los derechos reservados
+        </div>
+        <div class="logo_footer"><img src="../recursos/logo_footer.png"/>
+        </div>  
+        <div class="log"><img src="../recursos/whatsapp_footer.png">
+                        <img src="../recursos/mail_footer.png">
+        </div>
     </footer>
 </body>
 </html>
