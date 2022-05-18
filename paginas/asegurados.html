@@ -11,34 +11,58 @@
 </head>
 <body>
     <header>
-        <nav class="header__navegacion">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="asegurados.html">ASEGURADOS</a></li>
-                <li><a href="coberturas.html">COBERTURAS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="quienes_somos.html">QUIENES SOMOS</a></li>
-            </ul> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/logo_footer.png" alt="" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asegurados.html">ASEGURADOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coberturas.html">COBERTURAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes_somos.html">QUIENES SOMOS</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="mx-4">
         <h1 class="section__titulo">ASEGURADOS</h1>
         <section class="section__asegurados">
-            <img class="section__foto__main__asegurados" src="../recursos/foto_index 2.jpg"alt="tu seguridad es nuestra tranqui"/>
-            <form class="formulario__contacto" method="POST">
-                <label for="nombre">Usuario</label>
-                <input placeholder="escribe tu usuario aqui"/>
-                <label for="contraseña">Contraseña</label>
-                <input  placeholder="escribe tu contraseña aqui"/> 
-        </form>
-        </section>
-        <div class="boton__contacto">
-            <input type="button" value="Enviar"/>
-            <input type="reset" value="Borrar"/>
-        </div>
+            <img class="container rounded <!-- section__foto__main__asegurados -->" src="../recursos/foto_index 2.jpg"alt="tu seguridad es nuestra tranqui"/>
+            
+            <div class="container pt-3 w-50 pb-3">
+                <form class="form-inline" action="/action_page.php">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email aqui" name="email">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu password" name="pswd">
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Recordarme
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <button type="button" class="btn btn-primary">Olivde mi contraseña</button>
+                </form>
         
     </main>
-    <footer>
+    <footer class="mx-4">
         <div class="disclaimer">Todos los derechos reservados
         </div>
         <div class="logo_footer"><img src="../recursos/logo_footer.png"/>
