@@ -1,0 +1,43 @@
+@media (min-width: 541px) and (max-width: 720px) {    
+
+    .quienes__somos__foto{
+        max-width: 75%;
+    }
+        
+    }
+    
+    @media (min-width: 320px) and (max-width: 540px) {
+        
+    li:hover {
+        transform: none; }
+    .section{
+        &__coberturas {
+        padding: 1.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; }
+        &__foto__main__asegurados {
+            max-width: 75%;
+            align-self: center; }
+        &__quienes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+        }
+    .cobertura__automotor {
+        object-fit: contain; }
+    .formulario__contacto {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom: 20px; }
+    .quienes__somos__foto{
+        max-width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: row; }
+    .disclaimer {
+        font-size: 8px; } }

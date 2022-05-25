@@ -1,0 +1,25 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-fondo-header;
+    color: $color-letra;
+    font-size: $tamano-letra;
+    height: 50px; }
+
+.mail_footer {
+    padding: 10px; }
+
+.footer__disclaimer {
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $color-letra;
+    text-align: left;
+    align-items: center;
+    justify-content: center; }
+
+    .log {
+        padding: 10px; }
